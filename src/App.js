@@ -8,6 +8,7 @@ import Login from './container/Login';
 import SignUp from './container/SignUp';
 import Dashboard from './container/Dashboard';
 import PostDetails from './components/PostDetails';
+import NotFound from './components/NotFound';
 function App() {
   return (
     <div>
@@ -21,6 +22,7 @@ function App() {
          <Route exact path="/signup" component={SignUp} />
          <Route exact path="/dashboard" component={Dashboard} />
          <Route exact path="/post/:details"  component={PostDetails}  />
+         <Route component={NotFound} />
         </Switch>
         <Footer />
       </Router>
